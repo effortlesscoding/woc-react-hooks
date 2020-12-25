@@ -1,0 +1,54 @@
+@keyframes dice-rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}
+.container {
+	background-color: #ececec;
+  padding: 16px 32px;
+  display: flex;
+  max-width: 1024px;
+  margin: 48px auto;
+}
+.container h2 {
+	margin: 50px 0;
+}
+.container img {
+	min-height: 100px;
+}
+
+.container__column {
+  flex: 1;
+}
+
+.dice--rolling {
+	animation-name: dice-rotation;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+.dice__actions {
+	display: flex;
+	padding: 12px 0;
+}
+.dice__actions button {
+	background: none;
+	background-color: #008037;
+	color: #ffffff;
+	border-color: transparent;
+	border-radius: 4px;
+	font-size: 24px;
+	padding: 12px 24px;
+	cursor: pointer;
+	margin-right: 12px;
+}
+.dice__actions button:hover {
+	background-color: #6ac259;
+}
+
+.prizes ul li {
+  list-style-type: none;
+}
